@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FD1FFFE-A317-46B9-9E11-CFA96FF1C9FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BuxferSharp</RootNamespace>
+    <AssemblyName>BuxferSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\BuxferSharp.xml</DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>BuxferSharp.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HelperSharp">
+      <HintPath>..\packages\HelperSharp.0.0.4.2\lib\net35\HelperSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="Budget.cs" />
+    <Compile Include="Contact.cs" />
+    <Compile Include="AsyncBuxferClient.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="IBuxferClient.cs" />
+    <Compile Include="Reminder.cs" />
+    <Compile Include="Loan.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="ReportItem.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="ReportFilter.cs" />
+    <Compile Include="FilterBase.cs" />
+    <Compile Include="Responses\AccountsResponse.cs" />
+    <Compile Include="Responses\BudgetsResponse.cs" />
+    <Compile Include="Responses\ContactsResponse.cs" />
+    <Compile Include="Responses\AddTransactionResponse.cs" />
+    <Compile Include="Responses\GroupsResponse.cs" />
+    <Compile Include="Responses\RemindersResponse.cs" />
+    <Compile Include="Responses\TagsResponse.cs" />
+    <Compile Include="Responses\LoanResponse.cs" />
+    <Compile Include="Responses\LoansResponse.cs" />
+    <Compile Include="Responses\UploadStatementResponse.cs" />
+    <Compile Include="Serialization\RequestBuilder.cs" />
+    <Compile Include="Responses\ReportItemResponse.cs" />
+    <Compile Include="Responses\ReportResponse.cs" />
+    <Compile Include="Responses\ReportsResponse.cs" />
+    <Compile Include="Responses\ErrorResponse.cs" />
+    <Compile Include="FilterResult.cs" />
+    <Compile Include="Security\TokenAuthenticator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BuxferClient.cs" />
+    <Compile Include="Responses\SuccessResponseBase.cs" />
+    <Compile Include="Responses\Output.cs" />
+    <Compile Include="Responses\LoginResponse.cs" />
+    <Compile Include="BuxferException.cs" />
+    <Compile Include="Serialization\TransactionSerializer.cs" />
+    <Compile Include="Statement.cs" />
+    <Compile Include="Tag.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="Responses\TransactionsResponse.cs" />
+    <Compile Include="TransactionFilter.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="BuxferSharp.snk" />
+    <None Include="packages.config" />
+    <None Include="Settings.StyleCop" />
+  </ItemGroup>
+</Project>

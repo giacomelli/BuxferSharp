@@ -1,0 +1,17 @@
+<Dictionary>
+  <Words>
+    <Recognized>
+      <Word>Buxfer</Word>    
+      <Word>NumTransactions</Word>    
+      <Word>Num</Word>   
+      <Word>Sms</Word>    
+    </Recognized>
+    <Deprecated>
+	<Term PreferredAlternate="Logoff">Logout</Term>
+    </Deprecated>
+  </Words>
+  <Acronyms>
+      <CasingExceptions>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

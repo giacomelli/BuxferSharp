@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E3F6329-A479-4512-84EC-840981218645}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BuxferSharp.WindowsPhone</RootNamespace>
+    <AssemblyName>BuxferSharp.WindowsPhone</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\BuxferSharp\Account.cs">
+      <Link>Account.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\AsyncBuxferClient.cs">
+      <Link>AsyncBuxferClient.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Budget.cs">
+      <Link>Budget.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\BuxferException.cs">
+      <Link>BuxferException.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Contact.cs">
+      <Link>Contact.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\EntityBase.cs">
+      <Link>EntityBase.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\FilterBase.cs">
+      <Link>FilterBase.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\FilterResult.cs">
+      <Link>FilterResult.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Group.cs">
+      <Link>Group.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\IBuxferClient.cs">
+      <Link>IBuxferClient.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\IEntity.cs">
+      <Link>IEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Loan.cs">
+      <Link>Loan.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Reminder.cs">
+      <Link>Reminder.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Report.cs">
+      <Link>Report.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\ReportFilter.cs">
+      <Link>ReportFilter.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\ReportItem.cs">
+      <Link>ReportItem.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\AccountsResponse.cs">
+      <Link>AccountsResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\AddTransactionResponse.cs">
+      <Link>AddTransactionResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\BudgetsResponse.cs">
+      <Link>BudgetsResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\ContactsResponse.cs">
+      <Link>ContactsResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\ErrorResponse.cs">
+      <Link>ErrorResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\GroupsResponse.cs">
+      <Link>GroupsResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\LoanResponse.cs">
+      <Link>LoanResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\LoansResponse.cs">
+      <Link>LoansResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\LoginResponse.cs">
+      <Link>LoginResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\Output.cs">
+      <Link>Output.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\RemindersResponse.cs">
+      <Link>RemindersResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\ReportItemResponse.cs">
+      <Link>ReportItemResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\ReportResponse.cs">
+      <Link>ReportResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\ReportsResponse.cs">
+      <Link>ReportsResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\SuccessResponseBase.cs">
+      <Link>SuccessResponseBase.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\TagsResponse.cs">
+      <Link>TagsResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\TransactionsResponse.cs">
+      <Link>TransactionsResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Responses\UploadStatementResponse.cs">
+      <Link>UploadStatementResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Security\TokenAuthenticator.cs">
+      <Link>TokenAuthenticator.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Serialization\RequestBuilder.cs">
+      <Link>RequestBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Serialization\TransactionSerializer.cs">
+      <Link>TransactionSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Statement.cs">
+      <Link>Statement.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Tag.cs">
+      <Link>Tag.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\Transaction.cs">
+      <Link>Transaction.cs</Link>
+    </Compile>
+    <Compile Include="..\BuxferSharp\TransactionFilter.cs">
+      <Link>TransactionFilter.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="RestSharp.WindowsPhone">
+      <HintPath>..\references\RestSharp.WindowsPhone.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
